@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://dataflowanalysis.org/pcm/extension/dictionary/characterized/1.0" xmlns:confidentiality="http://dataflowanalysis.org/pcm/extension/model/0.1.0" xmlns:expression="http://dataflowanalysis.org/pcm/extension/model/0.1.0/expression" xmlns:expressions="http://dataflowanalysis.org/pcm/extension/dictionary/characterized/expressions/1.0" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" id="_dqFLECHbEd6tG9VclJz3cw" entityName="defaultRepository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_j3xt4MNzEeWPE-QAhbUzuQ" entityName="Airline">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_U4nK8I0wEe6e08WJYE3hcQ" entityName="Provided_AirlineBooking_Airline" providedInterface__OperationProvidedRole="_y_H88MNyEeWPE-QAhbUzuQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_rXuhQJKfEe6Q8r9ohmbDGg" entityName="Provided_FlightQueryWithDiscount_Airline" providedInterface__OperationProvidedRole="_7LgYh5KeEe6Q8r9ohmbDGg"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_dsHn8I0wEe6e08WJYE3hcQ" entityName="Required_Commission_Airline" requiredInterface__OperationRequiredRole="_IR9L8MN0EeWPE-QAhbUzuQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_e8m_cI0wEe6e08WJYE3hcQ" entityName="Required_AirlineLogging_Airline" requiredInterface__OperationRequiredRole="_NhhRMAyQEey1YdsQNY8KdA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_5WbfUJnHEe64o_d9hBvmUg" entityName="Required_FlightStoring_Airline" requiredInterface__OperationRequiredRole="_nRkywJnHEe64o_d9hBvmUg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_U4sDcI0wEe6e08WJYE3hcQ" describedService__SEFF="_00dt8MNyEeWPE-QAhbUzuQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_U4sDcY0wEe6e08WJYE3hcQ" entityName="start" successor_AbstractAction="_OaMHsMTjEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_U4sDco0wEe6e08WJYE3hcQ" entityName="stop" predecessor_AbstractAction="_Ybf0kMTjEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_OaMHsMTjEe6XFM0MtVDcCQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_U4sDcY0wEe6e08WJYE3hcQ" successor_AbstractAction="_PC4fIMWCEe6o5cXFW3-2kw" calledService_ExternalService="_gwavAAyQEey1YdsQNY8KdA" role_ExternalService="_e8m_cI0wEe6e08WJYE3hcQ">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="ccd_decl.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_bG9d8MlfEfGXbpj0ba7mEw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_bG9d8clfEfGXbpj0ba7mEw">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="ccd_decl"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_jtHDENFwEfGLNZtn5yGj6w">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@4"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@2.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_jtHDEdFwEfGLNZtn5yGj6w"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="entry"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_PC4fIMWCEe6o5cXFW3-2kw" entityName="retrieve flightId for offer" predecessor_AbstractAction="_OaMHsMTjEe6XFM0MtVDcCQ" successor_AbstractAction="_VheTcMTjEe6XFM0MtVDcCQ">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="0"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="targetflightId"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_VheTcMTjEe6XFM0MtVDcCQ" entityName="ExternalCallAction2" predecessor_AbstractAction="_PC4fIMWCEe6o5cXFW3-2kw" successor_AbstractAction="_Ybf0kMTjEe6XFM0MtVDcCQ" calledService_ExternalService="_z6Jc0JnHEe64o_d9hBvmUg" role_ExternalService="_5WbfUJnHEe64o_d9hBvmUg">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="flightId.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="flightId"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="passengerDetails.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="details"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_ue6XAJPeEfGXLc3C3QRpeg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_ue6XAZPeEfGXLc3C3QRpeg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="targetflightId"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="flightId"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_1iFe0JPeEfGXLc3C3QRpeg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_1iFe0ZPeEfGXLc3C3QRpeg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="passengerDetails"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="details"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_Ybf0kMTjEe6XFM0MtVDcCQ" entityName="ExternalCallAction3" predecessor_AbstractAction="_VheTcMTjEe6XFM0MtVDcCQ" successor_AbstractAction="_U4sDco0wEe6e08WJYE3hcQ" calledService_ExternalService="_nXaBAMN0EeWPE-QAhbUzuQ" role_ExternalService="_dsHn8I0wEe6e08WJYE3hcQ">
+        <returnVariableUsage__CallReturnAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="RETURN.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_rX1O8JKfEe6Q8r9ohmbDGg" describedService__SEFF="__SHokJKeEe6Q8r9ohmbDGg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_rX3EIJKfEe6Q8r9ohmbDGg" entityName="start" successor_AbstractAction="_2uNdgMWFEe6o5cXFW3-2kw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_rX3EIZKfEe6Q8r9ohmbDGg" entityName="stop" predecessor_AbstractAction="_q5gku8ZnEe6WJbTfhcr3kA"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_2uNdgMWFEe6o5cXFW3-2kw" entityName="ExternalCallAction1" predecessor_AbstractAction="_rX3EIJKfEe6Q8r9ohmbDGg" successor_AbstractAction="_AIowkMWGEe6o5cXFW3-2kw" calledService_ExternalService="_gwavAAyQEey1YdsQNY8KdA" role_ExternalService="_e8m_cI0wEe6e08WJYE3hcQ">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="discount.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_jtHDEtFwEfGLNZtn5yGj6w">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@4"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@2.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_jtHDE9FwEfGLNZtn5yGj6w"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="entry"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_AIowkMWGEe6o5cXFW3-2kw" entityName="Get airlineId" predecessor_AbstractAction="_2uNdgMWFEe6o5cXFW3-2kw" successor_AbstractAction="_d9w_psZqEe6WJbTfhcr3kA">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="1"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ownAirlineId"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_d9w_psZqEe6WJbTfhcr3kA" entityName="get Flights" predecessor_AbstractAction="_AIowkMWGEe6o5cXFW3-2kw" successor_AbstractAction="_VUu0q8ZnEe6WJbTfhcr3kA" calledService_ExternalService="_plvNwJnHEe64o_d9hBvmUg" role_ExternalService="_5WbfUJnHEe64o_d9hBvmUg">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="ownAirlineId.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="airlineId"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="flights"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_VUu0q8ZnEe6WJbTfhcr3kA" entityName="Retrieve Flight Offers for User" predecessor_AbstractAction="_d9w_psZqEe6WJbTfhcr3kA" successor_AbstractAction="_q5gku8ZnEe6WJbTfhcr3kA">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="fittingOffers"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_q5gku8ZnEe6WJbTfhcr3kA" entityName="return" predecessor_AbstractAction="_VUu0q8ZnEe6WJbTfhcr3kA" successor_AbstractAction="_rX3EIZKfEe6Q8r9ohmbDGg">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_5EaVoMNxEeWPE-QAhbUzuQ" entityName="TravelPlanner">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="__c2pcI0uEe6fP4H9xO-odw" entityName="Provided_FlightQuery_TravelPlanner" providedInterface__OperationProvidedRole="_uUkncMN0EeWPE-QAhbUzuQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_HomGYI0wEe6e08WJYE3hcQ" entityName="Provided_FlightBooking_TravelPlanner" providedInterface__OperationProvidedRole="_sTp-SIqtEe65U8vWBC8HcA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_-9kFYI0uEe6fP4H9xO-odw" entityName="Required_FlightQuery_TravelPlanner" requiredInterface__OperationRequiredRole="_uUkncMN0EeWPE-QAhbUzuQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_6nN6wI0vEe6e08WJYE3hcQ" entityName="Required_Declassification_TravelPlanner" requiredInterface__OperationRequiredRole="_CayVgMN6EeWPE-QAhbUzuQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_OAFz8I0wEe6e08WJYE3hcQ" entityName="Required_AirlineBooking_TravelPlanner" requiredInterface__OperationRequiredRole="_y_H88MNyEeWPE-QAhbUzuQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="__c3QgI0uEe6fP4H9xO-odw" describedService__SEFF="_602gYM5lEeWFJak7Wqvc0g">
+      <steps_Behaviour xsi:type="seff:StartAction" id="__c33kI0uEe6fP4H9xO-odw" entityName="start" successor_AbstractAction="__-fBMMTkEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="__-fBMMTkEe6XFM0MtVDcCQ" entityName="ExternalCallAction1" predecessor_AbstractAction="__c33kI0uEe6fP4H9xO-odw" successor_AbstractAction="__c33kY0uEe6fP4H9xO-odw" calledService_ExternalService="_602gYM5lEeWFJak7Wqvc0g" role_ExternalService="_-9kFYI0uEe6fP4H9xO-odw">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_8qdXEJPbEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_8qdXEZPbEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="requestData"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="requestData"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="__c33kY0uEe6fP4H9xO-odw" entityName="stop" predecessor_AbstractAction="__-fBMMTkEe6XFM0MtVDcCQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_Hon7kI0wEe6e08WJYE3hcQ" describedService__SEFF="_wUdhQIqtEe65U8vWBC8HcA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_HopJsI0wEe6e08WJYE3hcQ" entityName="start" successor_AbstractAction="_Ley7O8ZwEe6WJbTfhcr3kA"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_Ley7O8ZwEe6WJbTfhcr3kA" entityName="retrieve airlineId" predecessor_AbstractAction="_HopJsI0wEe6e08WJYE3hcQ" successor_AbstractAction="_iRewUMTlEe6XFM0MtVDcCQ">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="retrievedAirlineId"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_iRewUMTlEe6XFM0MtVDcCQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_Ley7O8ZwEe6WJbTfhcr3kA" successor_AbstractAction="_L-idQMTmEe6XFM0MtVDcCQ" calledService_ExternalService="_JXJqsMN6EeWPE-QAhbUzuQ" role_ExternalService="_6nN6wI0vEe6e08WJYE3hcQ">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="retrievedAirlineId.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="airlineId"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ccd_decl"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_L-idQMTmEe6XFM0MtVDcCQ" entityName="Retrieve Passenger Details" predecessor_AbstractAction="_iRewUMTlEe6XFM0MtVDcCQ" successor_AbstractAction="_wqr_i8ZvEe6WJbTfhcr3kA">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="localPassengerDetails"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_wqr_i8ZvEe6WJbTfhcr3kA" entityName="Retrieve FlightofferId" predecessor_AbstractAction="_L-idQMTmEe6XFM0MtVDcCQ" successor_AbstractAction="_HiE5AMTmEe6XFM0MtVDcCQ">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="localFlightOfferId"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_HiE5AMTmEe6XFM0MtVDcCQ" entityName="ExternalCallAction2" predecessor_AbstractAction="_wqr_i8ZvEe6WJbTfhcr3kA" successor_AbstractAction="_HopJsY0wEe6e08WJYE3hcQ" calledService_ExternalService="_00dt8MNyEeWPE-QAhbUzuQ" role_ExternalService="_OAFz8I0wEe6e08WJYE3hcQ">
+        <inputVariableUsages__CallAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="offerId"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ccd_decl"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_y-YocJPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_y-YocZPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="localPassengerDetails"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="passengerDetails"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="__3fo4JPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="__3fo4ZPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="ccd_decl"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ccd_decl"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_Gtug4JPeEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_Gtug4ZPeEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="localFlightOfferId"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="offerId"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_HopJsY0wEe6e08WJYE3hcQ" entityName="stop" predecessor_AbstractAction="_HiE5AMTmEe6XFM0MtVDcCQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="__s82QMN5EeWPE-QAhbUzuQ" entityName="CreditCardCenter">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_5cTm0I0vEe6e08WJYE3hcQ" entityName="Provided_Declassification_CreditCardCenter" providedInterface__OperationProvidedRole="_CayVgMN6EeWPE-QAhbUzuQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_y-Ls0I0vEe6e08WJYE3hcQ" entityName="Required_DeclassificationConfirmation_CreditCardCenter" requiredInterface__OperationRequiredRole="_XQ1XUMN6EeWPE-QAhbUzuQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_5cVcAI0vEe6e08WJYE3hcQ" describedService__SEFF="_JXJqsMN6EeWPE-QAhbUzuQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_5cWDEI0vEe6e08WJYE3hcQ" entityName="start" successor_AbstractAction="_605nYMaIEe6vEYDBqyqbrQ"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_605nYMaIEe6vEYDBqyqbrQ" entityName="Retrieve UserDetails" predecessor_AbstractAction="_5cWDEI0vEe6e08WJYE3hcQ" successor_AbstractAction="_3LfkwMToEe6XFM0MtVDcCQ">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="localCCD"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_3LfkwMToEe6XFM0MtVDcCQ" entityName="Call Confirm" predecessor_AbstractAction="_605nYMaIEe6vEYDBqyqbrQ" successor_AbstractAction="__fb7cMTpEe6XFM0MtVDcCQ" calledService_ExternalService="_hAD1sMN6EeWPE-QAhbUzuQ" role_ExternalService="_y-Ls0I0vEe6e08WJYE3hcQ">
+        <inputVariableUsages__CallAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ccd"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_cxXzsJPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_cxXzsZPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="airlineId"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="airlineId"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_nD9d0JPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_nD9d0ZPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="localCCD"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ccd"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="confirmed"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="__fb7cMTpEe6XFM0MtVDcCQ" entityName="Retrieve Declassified CCD" predecessor_AbstractAction="_3LfkwMToEe6XFM0MtVDcCQ" successor_AbstractAction="_4I0tacZhEe6WJbTfhcr3kA">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ccd_decl"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_4I0tacZhEe6WJbTfhcr3kA" entityName="Assign Return declassified data" predecessor_AbstractAction="__fb7cMTpEe6XFM0MtVDcCQ" successor_AbstractAction="_5cWqII0vEe6e08WJYE3hcQ">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_5cWqII0vEe6e08WJYE3hcQ" entityName="stop" predecessor_AbstractAction="_4I0tacZhEe6WJbTfhcr3kA"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_l3SqMO7sEeurfJm_5KAHmg" entityName="UserInterface">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_ZYfsEI0vEe6fP4H9xO-odw" entityName="Provided_FlightQuery_UserInterface" providedInterface__OperationProvidedRole="_uUkncMN0EeWPE-QAhbUzuQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_0baf0I0vEe6e08WJYE3hcQ" entityName="Provided_DeclassificationConfirmation_UserInterface" providedInterface__OperationProvidedRole="_XQ1XUMN6EeWPE-QAhbUzuQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_9XFaUI0vEe6e08WJYE3hcQ" entityName="Provided_FlightBooking_UserInterface" providedInterface__OperationProvidedRole="_sTp-SIqtEe65U8vWBC8HcA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_NJtbAI0vEe6fP4H9xO-odw" entityName="Required_FlightQuery_UserInterface" requiredInterface__OperationRequiredRole="_uUkncMN0EeWPE-QAhbUzuQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_43JEQI0vEe6e08WJYE3hcQ" entityName="Required_Declassification_UserInterface" requiredInterface__OperationRequiredRole="_CayVgMN6EeWPE-QAhbUzuQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_G0tLUI0wEe6e08WJYE3hcQ" entityName="Required_FlightBooking_UserInterface" requiredInterface__OperationRequiredRole="_sTp-SIqtEe65U8vWBC8HcA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_ZYgTII0vEe6fP4H9xO-odw" describedService__SEFF="_602gYM5lEeWFJak7Wqvc0g">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_ZYg6MI0vEe6fP4H9xO-odw" entityName="start" successor_AbstractAction="_f1TvMMTtEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_f1TvMMTtEe6XFM0MtVDcCQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_ZYg6MI0vEe6fP4H9xO-odw" successor_AbstractAction="_ZYg6MY0vEe6fP4H9xO-odw" calledService_ExternalService="_602gYM5lEeWFJak7Wqvc0g" role_ExternalService="_NJtbAI0vEe6fP4H9xO-odw">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_yemf4JQDEfGXLc3C3QRpeg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_yemf4ZQDEfGXLc3C3QRpeg"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="requestData"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_ZYg6MY0vEe6fP4H9xO-odw" entityName="stop" predecessor_AbstractAction="_f1TvMMTtEe6XFM0MtVDcCQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_0bf_YI0vEe6e08WJYE3hcQ" describedService__SEFF="_hAD1sMN6EeWPE-QAhbUzuQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_0bh0kI0vEe6e08WJYE3hcQ" entityName="start" successor_AbstractAction="_sW_HEMTtEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_sW_HEMTtEe6XFM0MtVDcCQ" entityName="SetVariableAction1" predecessor_AbstractAction="_0bh0kI0vEe6e08WJYE3hcQ" successor_AbstractAction="_0biboI0vEe6e08WJYE3hcQ">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_0biboI0vEe6e08WJYE3hcQ" entityName="stop" predecessor_AbstractAction="_sW_HEMTtEe6XFM0MtVDcCQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_9XGocI0vEe6e08WJYE3hcQ" describedService__SEFF="_wUdhQIqtEe65U8vWBC8HcA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_9XHPgI0vEe6e08WJYE3hcQ" entityName="start" successor_AbstractAction="_x6-7IMTtEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_x6-7IMTtEe6XFM0MtVDcCQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_9XHPgI0vEe6e08WJYE3hcQ" successor_AbstractAction="_9XH2kI0vEe6e08WJYE3hcQ" calledService_ExternalService="_wUdhQIqtEe65U8vWBC8HcA" role_ExternalService="_G0tLUI0wEe6e08WJYE3hcQ">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_TfFwAJPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_TfFwAZPdEfG4A7PRIYBR2A">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="flightOffer"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="flightOffer"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_9XH2kI0vEe6e08WJYE3hcQ" entityName="stop" predecessor_AbstractAction="_x6-7IMTtEe6XFM0MtVDcCQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_MKBSwAyQEey1YdsQNY8KdA" entityName="AirlineLogger">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_169ccI0uEe6fP4H9xO-odw" entityName="Provided_AirlineLogging_AirlineLogger" providedInterface__OperationProvidedRole="_NhhRMAyQEey1YdsQNY8KdA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_4FlCEKpHEe6aj_SHkSg6ow" entityName="Required_LogStorage_AirlineLogger" requiredInterface__OperationRequiredRole="_6aHF-KpGEe6aj_SHkSg6ow"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_17JCoI0uEe6fP4H9xO-odw" describedService__SEFF="_gwavAAyQEey1YdsQNY8KdA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_17K30I0uEe6fP4H9xO-odw" entityName="start" successor_AbstractAction="_nh-nUMTqEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_17Le4I0uEe6fP4H9xO-odw" entityName="stop" predecessor_AbstractAction="_nh-nUMTqEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_nh-nUMTqEe6XFM0MtVDcCQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_17K30I0uEe6fP4H9xO-odw" successor_AbstractAction="_17Le4I0uEe6fP4H9xO-odw" calledService_ExternalService="__E7PQKpGEe6aj_SHkSg6ow" role_ExternalService="_4FlCEKpHEe6aj_SHkSg6ow">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="entry.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_jtHqINFwEfGLNZtn5yGj6w">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@4"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@2.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_jtHqIdFwEfGLNZtn5yGj6w"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="entry"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_W1xtMJJXEfGotuHcFZlOUg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_W1xtMZJXEfGotuHcFZlOUg">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="entry"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="entry"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_IQOjkI0vEe6fP4H9xO-odw" entityName="TravelAgency">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_VUaLkI0vEe6fP4H9xO-odw" entityName="Provided_FlightQuery_TravelAgency" providedInterface__OperationProvidedRole="_uUkncMN0EeWPE-QAhbUzuQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_aHgRsI0wEe6e08WJYE3hcQ" entityName="Provided_Commission_TravelAgency" providedInterface__OperationProvidedRole="_IR9L8MN0EeWPE-QAhbUzuQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_r3_VsJKfEe6Q8r9ohmbDGg" entityName="Required_FlightQueryWithDiscount_TravelAgency" requiredInterface__OperationRequiredRole="_7LgYh5KeEe6Q8r9ohmbDGg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_VUayoI0vEe6fP4H9xO-odw" describedService__SEFF="_602gYM5lEeWFJak7Wqvc0g">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_VUbZsI0vEe6fP4H9xO-odw" entityName="start" successor_AbstractAction="_TeaZ0MWDEe6o5cXFW3-2kw"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_TeaZ0MWDEe6o5cXFW3-2kw" entityName="retrieveDiscount" predecessor_AbstractAction="_VUbZsI0vEe6fP4H9xO-odw" successor_AbstractAction="_bmyPYMTkEe6XFM0MtVDcCQ">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="5"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="localDiscount"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_bmyPYMTkEe6XFM0MtVDcCQ" entityName="ExternalCallAction1" predecessor_AbstractAction="_TeaZ0MWDEe6o5cXFW3-2kw" successor_AbstractAction="_VUcAwI0vEe6fP4H9xO-odw" calledService_ExternalService="__SHokJKeEe6Q8r9ohmbDGg" role_ExternalService="_r3_VsJKfEe6Q8r9ohmbDGg">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="requestData.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="requestData"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="localDiscount.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="discount"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_hETwIJDKEfGlrLZ0lW-u8Q">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_hETwIZDKEfGlrLZ0lW-u8Q">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="requestData"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="requestData"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="RETURN.VALUE"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_VUcAwI0vEe6fP4H9xO-odw" entityName="stop" predecessor_AbstractAction="_bmyPYMTkEe6XFM0MtVDcCQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_aHg4wI0wEe6e08WJYE3hcQ" describedService__SEFF="_nXaBAMN0EeWPE-QAhbUzuQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_aHg4wY0wEe6e08WJYE3hcQ" entityName="start" successor_AbstractAction="_mKcbYMTkEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_aHg4wo0wEe6e08WJYE3hcQ" entityName="stop" predecessor_AbstractAction="_mKcbYMTkEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_mKcbYMTkEe6XFM0MtVDcCQ" entityName="return" predecessor_AbstractAction="_aHg4wY0wEe6e08WJYE3hcQ" successor_AbstractAction="_aHg4wo0wEe6e08WJYE3hcQ">
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage type="VALUE">
+            <specification_VariableCharacterisation specification="true"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_9fAeQJnHEe64o_d9hBvmUg" entityName="FlightStorage">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="__VCy0JnHEe64o_d9hBvmUg" entityName="Provided_FlightStoring_FlightStorage" providedInterface__OperationProvidedRole="_nRkywJnHEe64o_d9hBvmUg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="__VHEQJnHEe64o_d9hBvmUg" describedService__SEFF="_plvNwJnHEe64o_d9hBvmUg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="__VHEQZnHEe64o_d9hBvmUg" entityName="start" successor_AbstractAction="_wIbugMTkEe6XFM0MtVDcCQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="__VHEQpnHEe64o_d9hBvmUg" entityName="stop" predecessor_AbstractAction="_5v0my8ZpEe6WJbTfhcr3kA"/>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_wIbugMTkEe6XFM0MtVDcCQ" entityName="Get Current Flights" predecessor_AbstractAction="__VHEQZnHEe64o_d9hBvmUg" successor_AbstractAction="_5v0my8ZpEe6WJbTfhcr3kA">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="currentFlights"/>
+        </localVariableUsages_SetVariableAction>
+        <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_knA3oJgfEe6mOuFnQfU4ag"/>
+            <rhs xsi:type="expressions:True" id="_knBesJgfEe6mOuFnQfU4ag"/>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:SetVariableAction" id="_5v0my8ZpEe6WJbTfhcr3kA" entityName="return flights" predecessor_AbstractAction="_wIbugMTkEe6XFM0MtVDcCQ" successor_AbstractAction="__VHEQpnHEe64o_d9hBvmUg">
+        <localVariableUsages_SetVariableAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+        </localVariableUsages_SetVariableAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="__VHEQ5nHEe64o_d9hBvmUg" describedService__SEFF="_z6Jc0JnHEe64o_d9hBvmUg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="__VHERJnHEe64o_d9hBvmUg" entityName="start" successor_AbstractAction="_EboxcJDIEfGlrLZ0lW-u8Q"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="__VHERZnHEe64o_d9hBvmUg" entityName="stop" predecessor_AbstractAction="_EboxcJDIEfGlrLZ0lW-u8Q"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_EboxcJDIEfGlrLZ0lW-u8Q" entityName="ExternalCallAction1" predecessor_AbstractAction="__VHERJnHEe64o_d9hBvmUg" successor_AbstractAction="__VHERZnHEe64o_d9hBvmUg" calledService_ExternalService="_z6Jc0JnHEe64o_d9hBvmUg">
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_rlJjkJDIEfGlrLZ0lW-u8Q">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_rlJjkZDIEfGlrLZ0lW-u8Q">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="flightId"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="flightId"/>
+        </inputVariableUsages__CallAction>
+        <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_yNyrgJDIEfGlrLZ0lW-u8Q">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+            </lhs>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_yNyrgZDIEfGlrLZ0lW-u8Q">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+              <literal href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+              <namedReference xsi:type="stoex:VariableReference" referenceName="details"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="details"/>
+        </inputVariableUsages__CallAction>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_4VLZwKpGEe6aj_SHkSg6ow" entityName="LoggingDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_2E91MKpHEe6aj_SHkSg6ow" entityName="Provided_LogStorage_LoggingDB" providedInterface__OperationProvidedRole="_6aHF-KpGEe6aj_SHkSg6ow"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_2FFxAKpHEe6aj_SHkSg6ow" describedService__SEFF="__E7PQKpGEe6aj_SHkSg6ow">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_2FG_IKpHEe6aj_SHkSg6ow" entityName="start" successor_AbstractAction="_2FINQKpHEe6aj_SHkSg6ow"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_2FINQKpHEe6aj_SHkSg6ow" entityName="stop" predecessor_AbstractAction="_2FG_IKpHEe6aj_SHkSg6ow"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_biSU48pYEfG6hcpNbuZhyw" entityName="DifferentLoggingDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_biSU5MpYEfG6hcpNbuZhyw" entityName="Provided_LogStorage_LoggingDB" providedInterface__OperationProvidedRole="_6aHF-KpGEe6aj_SHkSg6ow"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_biSU5cpYEfG6hcpNbuZhyw" describedService__SEFF="__E7PQKpGEe6aj_SHkSg6ow">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_biSU5spYEfG6hcpNbuZhyw" entityName="start" successor_AbstractAction="_biSU58pYEfG6hcpNbuZhyw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_biSU58pYEfG6hcpNbuZhyw" entityName="stop" predecessor_AbstractAction="_biSU5spYEfG6hcpNbuZhyw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_IR9L8MN0EeWPE-QAhbUzuQ" entityName="Commission">
+    <signatures__OperationInterface id="_nXaBAMN0EeWPE-QAhbUzuQ" entityName="Commission::payCommission()">
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_uUkncMN0EeWPE-QAhbUzuQ" entityName="FlightQuery">
+    <signatures__OperationInterface id="_602gYM5lEeWFJak7Wqvc0g" entityName="FlightQuery::getFlightOffers(requestData)" returnType__OperationSignature="_XfY5nM5jEeWFJak7Wqvc0g">
+      <parameters__OperationSignature dataType__Parameter="_0D_NYM5hEeWFJak7Wqvc0g" parameterName="requestData"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_sTp-SIqtEe65U8vWBC8HcA" entityName="FlightBooking">
+    <signatures__OperationInterface id="_wUdhQIqtEe65U8vWBC8HcA" entityName="FlightBooking::bookSelected(flightOffer)">
+      <parameters__OperationSignature dataType__Parameter="_QuDIrc5jEeWFJak7Wqvc0g" parameterName="flightOffer"/>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_y_H88MNyEeWPE-QAhbUzuQ" entityName="AirlineBooking">
+    <signatures__OperationInterface id="_00dt8MNyEeWPE-QAhbUzuQ" entityName="AirlineBooking::bookFlightOffer(offerId, ccd_decl, passengerDetails)">
+      <parameters__OperationSignature parameterName="offerId">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature dataType__Parameter="_WVGGLc5iEeWFJak7Wqvc0g" parameterName="ccd_decl"/>
+      <parameters__OperationSignature dataType__Parameter="_kJeE7Z5SEe6t9IPLxrlozg" parameterName="passengerDetails"/>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_CayVgMN6EeWPE-QAhbUzuQ" entityName="Declassification">
+    <signatures__OperationInterface id="_JXJqsMN6EeWPE-QAhbUzuQ" entityName="Declassification::releaseCCD(airlineId)" returnType__OperationSignature="_WVGGLc5iEeWFJak7Wqvc0g">
+      <parameters__OperationSignature parameterName="airlineId">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_XQ1XUMN6EeWPE-QAhbUzuQ" entityName="DeclassificationConfirmation">
+    <signatures__OperationInterface id="_hAD1sMN6EeWPE-QAhbUzuQ" entityName="DeclassificationConfirmation::confirmRelease(ccd, airlineId)">
+      <parameters__OperationSignature dataType__Parameter="_WVGGLc5iEeWFJak7Wqvc0g" parameterName="ccd"/>
+      <parameters__OperationSignature parameterName="airlineId">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_NhhRMAyQEey1YdsQNY8KdA" entityName="AirlineLogging">
+    <signatures__OperationInterface id="_gwavAAyQEey1YdsQNY8KdA" entityName="AirlineLogging::log(entry)">
+      <parameters__OperationSignature dataType__Parameter="_klUkknl2Ee-nRc98jlfZMw" parameterName="entry"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_6aHF-KpGEe6aj_SHkSg6ow" entityName="LogStoring">
+    <signatures__OperationInterface id="__E7PQKpGEe6aj_SHkSg6ow" entityName="LogStorage::storeLog(entry)">
+      <parameters__OperationSignature dataType__Parameter="_klUkknl2Ee-nRc98jlfZMw" parameterName="entry"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_7LgYh5KeEe6Q8r9ohmbDGg" entityName="FlightQueryWithDiscount">
+    <signatures__OperationInterface id="__SHokJKeEe6Q8r9ohmbDGg" entityName="FlightQueryWithDiscount::getFlightOffers(requestData, discount)" returnType__OperationSignature="_XfY5nM5jEeWFJak7Wqvc0g">
+      <parameters__OperationSignature dataType__Parameter="_0D_NYM5hEeWFJak7Wqvc0g" parameterName="requestData"/>
+      <parameters__OperationSignature dataType__Parameter="_OQivvZKfEe6Q8r9ohmbDGg" parameterName="discount"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_nRkywJnHEe64o_d9hBvmUg" entityName="FlightStoring">
+    <signatures__OperationInterface id="_plvNwJnHEe64o_d9hBvmUg" entityName="FlightStoring::retrieveFlights(airlineId)" returnType__OperationSignature="_3FS4MpqNEe6W7ebFCI0Irg">
+      <parameters__OperationSignature parameterName="airlineId">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_z6Jc0JnHEe64o_d9hBvmUg" entityName="FlightStoring::addToFlight(flightId,details)">
+      <parameters__OperationSignature parameterName="flightId">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature dataType__Parameter="_kJeE7Z5SEe6t9IPLxrlozg" parameterName="details"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_RwWNcKlTEe6cBfxGxq9xmw" entityName="FlightStoring::addFlight(flight)">
+      <parameters__OperationSignature dataType__Parameter="_PqpkzZnHEe64o_d9hBvmUg" parameterName="flight"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_0D_NYM5hEeWFJak7Wqvc0g" entityName="RequestData">
+    <innerDeclaration_CompositeDataType entityName="destination">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="date">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="userName">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_FqBcup5OEe6t9IPLxrlozg" entityName="CreditCardDetails" innerType_CollectionDataType="_WVGGLc5iEeWFJak7Wqvc0g"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_WVGGLc5iEeWFJak7Wqvc0g" entityName="CreditCardDetails">
+    <innerDeclaration_CompositeDataType entityName="creditCardNumber">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_QuDIrc5jEeWFJak7Wqvc0g" entityName="FlightOffer">
+    <innerDeclaration_CompositeDataType entityName="id">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="airlineId">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="cost">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="flightId">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_XfY5nM5jEeWFJak7Wqvc0g" entityName="FlightOffers" innerType_CollectionDataType="_QuDIrc5jEeWFJak7Wqvc0g"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_kJeE7Z5SEe6t9IPLxrlozg" entityName="PassengerDetails">
+    <innerDeclaration_CompositeDataType entityName="firstName">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="lastName">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="age">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_QhwpDJ5TEe6t9IPLxrlozg" entityName="Passengers" innerType_CollectionDataType="_kJeE7Z5SEe6t9IPLxrlozg"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_OQivvZKfEe6Q8r9ohmbDGg" entityName="DiscountDetails">
+    <innerDeclaration_CompositeDataType entityName="discountId">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="travelAgencyName">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="discount">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_PqpkzZnHEe64o_d9hBvmUg" entityName="Flight">
+    <innerDeclaration_CompositeDataType entityName="from">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="to">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="date">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="airlineId">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="flightId">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_3FS4MpqNEe6W7ebFCI0Irg" entityName="Flights" innerType_CollectionDataType="_PqpkzZnHEe64o_d9hBvmUg"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_klUkknl2Ee-nRc98jlfZMw" entityName="Object"/>
+</repository:Repository>

@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcmMapping>
+    <PcmEntities>
+        <PcmEntity>
+            <Name>TravelAgency</Name>
+            <Id>_IQOjkI0vEe6fP4H9xO-odw</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>FlightQuery::getFlightOffers(requestData)</Name>
+                    <SeffName>FlightQuery::getFlightOffers(requestData)</SeffName>
+                    <Id>_602gYM5lEeWFJak7Wqvc0g</Id>
+                </OperationSignature>
+                <OperationSignature>
+                    <Name>Commission::payCommission()</Name>
+                    <SeffName>Commission::payCommission()</SeffName>
+                    <Id>_nXaBAMN0EeWPE-QAhbUzuQ</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelAgency</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.payCommission</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters></Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelAgency</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.payCommission</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters></Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelAgency</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.payCommission</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters></Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelAgency</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelAgency.payCommission</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters></Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+        <PcmEntity>
+            <Name>Airline</Name>
+            <Id>_j3xt4MNzEeWPE-QAhbUzuQ</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>AirlineBooking::bookFlightOffer(offerId,ccd_decl,passengerDetails)</Name>
+                    <SeffName>AirlineBooking::bookFlightOffer(offerId,ccd_decl,passengerDetails)</SeffName>
+                    <Id>_00dt8MNyEeWPE-QAhbUzuQ</Id>
+                </OperationSignature>
+                <OperationSignature>
+                    <Name>FlightQueryWithDiscount::getFlightOffers(requestData,discount)</Name>
+                    <SeffName>FlightQueryWithDiscount::getFlightOffers(requestData,discount)</SeffName>
+                    <Id>__SHokJKeEe6Q8r9ohmbDGg</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>Airline</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.setCommission</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.Commission</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.DiscountDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.bookFlightOffer</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.Airline.processBooking</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>private</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+        <PcmEntity>
+            <Name>FlightStorage</Name>
+            <Id>_9fAeQJnHEe64o_d9hBvmUg</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>FlightStoring::retrieveFlights(airlineId)</Name>
+                    <SeffName>FlightStoring::retrieveFlights(airlineId)</SeffName>
+                    <Id>_plvNwJnHEe64o_d9hBvmUg</Id>
+                </OperationSignature>
+                <OperationSignature>
+                    <Name>FlightStoring::addToFlight(flightId,details)</Name>
+                    <SeffName>FlightStoring::addToFlight(flightId,details)</SeffName>
+                    <Id>_z6Jc0JnHEe64o_d9hBvmUg</Id>
+                </OperationSignature>
+                <OperationSignature>
+                    <Name>FlightStoring::addFlight(flight)</Name>
+                    <SeffName>FlightStoring::addFlight(flight)</SeffName>
+                    <Id>_RwWNcKlTEe6cBfxGxq9xmw</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>FlightStorage</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.Flight</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.retrieveFlights</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addToFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>FlightStorage</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.Flight</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.retrieveFlights</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addToFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>FlightStorage</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.Flight</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.retrieveFlights</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addToFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>FlightStorage</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.Flight</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.retrieveFlights</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addToFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>FlightStorage</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.Flight</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.retrieveFlights</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addToFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>FlightStorage</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.Flight</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.retrieveFlights</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.FlightStorage.addToFlight</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int, edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.PassengerDetails</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+        <PcmEntity>
+            <Name>AirlineLogger</Name>
+            <Id>_MKBSwAyQEey1YdsQNY8KdA</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>AirlineLogging::log(entry)</Name>
+                    <SeffName>AirlineLogging::log(entry)</SeffName>
+                    <Id>_gwavAAyQEey1YdsQNY8KdA</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>AirlineLogger</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.AirlineLogger.log</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>AirlineLogger</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.AirlineLogger.log</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>AirlineLogger</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.AirlineLogger.log</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>AirlineLogger</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.AirlineLogger.log</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+        <PcmEntity>
+            <Name>TravelPlanner</Name>
+            <Id>_5EaVoMNxEeWPE-QAhbUzuQ</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>FlightQuery::getFlightOffers(requestData)</Name>
+                    <SeffName>FlightQuery::getFlightOffers(requestData)</SeffName>
+                    <Id>_602gYM5lEeWFJak7Wqvc0g</Id>
+                </OperationSignature>
+                <OperationSignature>
+                    <Name>FlightBooking::bookSelected(flightOffer)</Name>
+                    <SeffName>FlightBooking::bookSelected(flightOffer)</SeffName>
+                    <Id>_wUdhQIqtEe65U8vWBC8HcA</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelPlanner</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelPlanner</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelPlanner</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>TravelPlanner</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.TravelPlanner.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+        <PcmEntity>
+            <Name>UserInterface</Name>
+            <Id>_l3SqMO7sEeurfJm_5KAHmg</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>FlightQuery::getFlightOffers(requestData)</Name>
+                    <SeffName>FlightQuery::getFlightOffers(requestData)</SeffName>
+                    <Id>_602gYM5lEeWFJak7Wqvc0g</Id>
+                </OperationSignature>
+                <OperationSignature>
+                    <Name>DeclassificationConfirmation::confirmRelease(ccd,airlineId)</Name>
+                    <SeffName>DeclassificationConfirmation::confirmRelease(ccd,airlineId)</SeffName>
+                    <Id>_hAD1sMN6EeWPE-QAhbUzuQ</Id>
+                </OperationSignature>
+                <OperationSignature>
+                    <Name>FlightBooking::bookSelected(flightOffer)</Name>
+                    <SeffName>FlightBooking::bookSelected(flightOffer)</SeffName>
+                    <Id>_wUdhQIqtEe65U8vWBC8HcA</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>UserInterface</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.confirmRelease</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>UserInterface</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.confirmRelease</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>UserInterface</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.confirmRelease</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>UserInterface</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.confirmRelease</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>UserInterface</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.confirmRelease</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>UserInterface</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.getFlightOffers</Name>
+                            <ReturnType>java.util.Collection</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.RequestData</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.bookSelected</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.FlightOffer</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.UserInterface.confirmRelease</Name>
+                            <ReturnType>boolean</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails, int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+        <PcmEntity>
+            <Name>CreditCardCenter</Name>
+            <Id>__s82QMN5EeWPE-QAhbUzuQ</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>Declassification::releaseCCD(airlineId)</Name>
+                    <SeffName>Declassification::releaseCCD(airlineId)</SeffName>
+                    <Id>_JXJqsMN6EeWPE-QAhbUzuQ</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>CreditCardCenter</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.setDeclassificationConfirmation</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.DeclassificationConfirmation</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.releaseCCD</Name>
+                            <ReturnType>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>CreditCardCenter</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.setDeclassificationConfirmation</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.DeclassificationConfirmation</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.releaseCCD</Name>
+                            <ReturnType>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>CreditCardCenter</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.setDeclassificationConfirmation</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.DeclassificationConfirmation</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.releaseCCD</Name>
+                            <ReturnType>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>CreditCardCenter</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.setDeclassificationConfirmation</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.DeclassificationConfirmation</Parameters>
+                        </CorrespondentMethod>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.CreditCardCenter.releaseCCD</Name>
+                            <ReturnType>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.datatypes.CreditCardDetails</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>int</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+        <PcmEntity>
+            <Name>LoggingDB</Name>
+            <Id>_4VLZwKpGEe6aj_SHkSg6ow</Id>
+            <OperationSigatures>
+                <OperationSignature>
+                    <Name>LogStorage::storeLog(entry)</Name>
+                    <SeffName>LogStorage::storeLog(entry)</SeffName>
+                    <Id>__E7PQKpGEe6aj_SHkSg6ow</Id>
+                </OperationSignature>
+            </OperationSigatures>
+            <Correspondents>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>LoggingDB</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.LoggingDB.storeLog</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>LoggingDB</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.LoggingDB.storeLog</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>LoggingDB</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.LoggingDB.storeLog</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+                <Correspondent>
+                    <FilePath>No Path</FilePath>
+                    <ProjectName>No Project</ProjectName>
+                    <PackageName>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components</PackageName>
+                    <Interfaces/>
+                    <UnitName>LoggingDB</UnitName>
+                    <CorrespondentMethods>
+                        <CorrespondentMethod>
+                            <Name>edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components.LoggingDB.storeLog</Name>
+                            <ReturnType>void</ReturnType>
+                            <VisibilityModifier>public</VisibilityModifier>
+                            <Parameters>java.lang.Object</Parameters>
+                        </CorrespondentMethod>
+                    </CorrespondentMethods>
+                </Correspondent>
+            </Correspondents>
+        </PcmEntity>
+    </PcmEntities>
+</PcmMapping>

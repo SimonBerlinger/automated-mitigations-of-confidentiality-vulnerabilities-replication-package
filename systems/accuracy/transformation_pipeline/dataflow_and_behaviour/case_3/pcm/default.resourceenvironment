@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="FlightPlannerScenario">
+  <linkingResources__ResourceEnvironment id="_67lcMMN9EeWPE-QAhbUzuQ" entityName="Internet" connectedResourceContainers_LinkingResource="_fuWBEMN4EeWPE-QAhbUzuQ _HM_VsMN5EeWPE-QAhbUzuQ">
+    <communicationLinkResourceSpecifications_LinkingResource id="_67lcMcN9EeWPE-QAhbUzuQ">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="1"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <linkingResources__ResourceEnvironment id="_niT6YMN9EeWPE-QAhbUzuQ" entityName="4G + Internet" connectedResourceContainers_LinkingResource="_Lq-ZYMN4EeWPE-QAhbUzuQ _fuWBEMN4EeWPE-QAhbUzuQ">
+    <communicationLinkResourceSpecifications_LinkingResource id="_niT6YcN9EeWPE-QAhbUzuQ">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="1"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <linkingResources__ResourceEnvironment id="_1XdFQMN9EeWPE-QAhbUzuQ" entityName="OpenWifi + Internet" connectedResourceContainers_LinkingResource="_fuWBEMN4EeWPE-QAhbUzuQ _Lq-ZYMN4EeWPE-QAhbUzuQ">
+    <communicationLinkResourceSpecifications_LinkingResource id="_1XdsUMN9EeWPE-QAhbUzuQ">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="1"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <linkingResources__ResourceEnvironment id="_pfhrYBRrEey_turSZ8PcJQ" entityName="Internet" connectedResourceContainers_LinkingResource="_jIQAQBRrEey_turSZ8PcJQ _fuWBEMN4EeWPE-QAhbUzuQ">
+    <communicationLinkResourceSpecifications_LinkingResource id="_pfiScBRrEey_turSZ8PcJQ">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="1&#xD;&#xA;"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <linkingResources__ResourceEnvironment id="_Qsado6o3Ee6aj_SHkSg6ow" entityName="AirlineNetworks" connectedResourceContainers_LinkingResource="_fuWBEMN4EeWPE-QAhbUzuQ _KtoLAao3Ee6aj_SHkSg6ow">
+    <communicationLinkResourceSpecifications_LinkingResource id="_l0BUEKo4Ee6aj_SHkSg6ow">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="1"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_HM_VsMN5EeWPE-QAhbUzuQ" entityName="AgencyServer"/>
+  <resourceContainer_ResourceEnvironment id="_fuWBEMN4EeWPE-QAhbUzuQ" entityName="AirlineServer"/>
+  <resourceContainer_ResourceEnvironment id="_Lq-ZYMN4EeWPE-QAhbUzuQ" entityName="MobilePhone"/>
+  <resourceContainer_ResourceEnvironment id="_jIQAQBRrEey_turSZ8PcJQ" entityName="SupportCenter"/>
+  <resourceContainer_ResourceEnvironment id="_KtoLAao3Ee6aj_SHkSg6ow" entityName="FlightStorageServer"/>
+</resourceenvironment:ResourceEnvironment>

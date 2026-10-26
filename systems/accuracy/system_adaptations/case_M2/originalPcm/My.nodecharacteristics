@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodecharacteristics:Assignments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://dataflowanalysis.org/pcm/extension/dictionary/characterized/1.0" xmlns:nodecharacteristics="http://dataflowanalysis.org/pcm/extension/nodecharacteristics/0.1.0">
+  <assignee xsi:type="nodecharacteristics:AssemblyAssignee" id="_bJPiUqPCEfGOv-UP-zbXMw">
+    <characteristics id="_dQBooKPCEfGOv-UP-zbXMw" entityName="db">
+      <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@4"/>
+      <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@2.literals@0"/>
+    </characteristics>
+    <assemblycontext href="default.system#ID_LDB_1"/>
+  </assignee>
+  <assignee xsi:type="nodecharacteristics:ResourceAssignee" id="_jdqSUaRAEfGNkMBiKeV4Zw">
+    <characteristics id="_k8VPwKRAEfGNkMBiKeV4Zw">
+      <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@2"/>
+      <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@0.literals@1"/>
+    </characteristics>
+    <resourcecontainer href="default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
+  </assignee>
+  <assignee xsi:type="nodecharacteristics:ResourceAssignee" id="_nsylMaRAEfGNkMBiKeV4Zw">
+    <characteristics id="_okqoYKRAEfGNkMBiKeV4Zw">
+      <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@2"/>
+      <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@0.literals@0"/>
+    </characteristics>
+    <resourcecontainer href="default.resourceenvironment#_Lq-ZYMN4EeWPE-QAhbUzuQ"/>
+  </assignee>
+  <assignee xsi:type="nodecharacteristics:UsageAssignee" id="_2c0D8KRAEfGNkMBiKeV4Zw">
+    <characteristics id="_S3bDYKRBEfGNkMBiKeV4Zw">
+      <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@3"/>
+      <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </characteristics>
+    <usagescenario href="travelPlanner.usagemodel#_V_RAcPVhEeuMKba1Qn68bg"/>
+  </assignee>
+  <assignee xsi:type="nodecharacteristics:ResourceAssignee" id="_uIV90clXEfGJQIZ9P-5XCQ">
+    <characteristics id="_vqpeEMlXEfGJQIZ9P-5XCQ">
+      <type xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@0"/>
+      <values href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@3.literals@0"/>
+    </characteristics>
+    <resourcecontainer href="default.resourceenvironment#_jIQAQBRrEey_turSZ8PcJQ"/>
+  </assignee>
+</nodecharacteristics:Assignments>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_JiPBICHdEd6lJo4DCALHMw" entityName="defaultAllocation">
+  <targetResourceEnvironment_Allocation href="default.resourceenvironment#/"/>
+  <system_Allocation href="default.system#_84D0kCHcEd6lJo4DCALHMw"/>
+  <allocationContexts_Allocation id="_7WY6IMODEeWst9mTsticNA" entityName="Allocation_TravelAgency &lt;TravelAgency> &lt;TravelAgency>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_HM_VsMN5EeWPE-QAhbUzuQ"/>
+    <assemblyContext_AllocationContext href="default.system#_HEzvkKpKEe6aj_SHkSg6ow"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="__rFpgMODEeWst9mTsticNA" entityName="Allocation_Airline &lt;Airline> &lt;Airline>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
+    <assemblyContext_AllocationContext href="default.system#_HRAO0MOAEeWst9mTsticNA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_Drzs8MOEEeWst9mTsticNA" entityName="Allocation_CreditCardCenter &lt;CreditCardCenter> &lt;CreditCardCenter>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_Lq-ZYMN4EeWPE-QAhbUzuQ"/>
+    <assemblyContext_AllocationContext href="default.system#_XOyEsMOBEeWst9mTsticNA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_HxxcwMOEEeWst9mTsticNA" entityName="Allocation_TravelPlanner &lt;TravelPlanner> &lt;TravelPlanner>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_Lq-ZYMN4EeWPE-QAhbUzuQ"/>
+    <assemblyContext_AllocationContext href="default.system#_2pBlYMN-EeWst9mTsticNA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_YPG4YKpKEe6aj_SHkSg6ow" entityName="Allocation_UserInterface">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_Lq-ZYMN4EeWPE-QAhbUzuQ"/>
+    <assemblyContext_AllocationContext href="default.system#_mz-sgKpJEe6aj_SHkSg6ow"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="__AOzwBRrEey_turSZ8PcJQ" entityName="Allocation_Assembly_AirlineLogger &lt;AirlineLogger> &lt;AirlineLogger>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jIQAQBRrEey_turSZ8PcJQ"/>
+    <assemblyContext_AllocationContext href="default.system#_5gt3EBRrEey_turSZ8PcJQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_RSo6sKo4Ee6aj_SHkSg6ow" entityName="Allocation_FlightStorage">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_KtoLAao3Ee6aj_SHkSg6ow"/>
+    <assemblyContext_AllocationContext href="default.system#_Vt1ToKo4Ee6aj_SHkSg6ow"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_sCdOcKpHEe6aj_SHkSg6ow" entityName="Allocation_LoggingDB">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jIQAQBRrEey_turSZ8PcJQ"/>
+    <assemblyContext_AllocationContext href="default.system#ID_LDB_1"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_xpQ1EMpCEfGsr-bHmoktfA" entityName="Allocation_LoggingDB2">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jIQAQBRrEey_turSZ8PcJQ"/>
+    <assemblyContext_AllocationContext href="default.system#ID_LDB_2"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

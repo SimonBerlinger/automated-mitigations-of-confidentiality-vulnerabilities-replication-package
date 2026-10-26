@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_84D0kCHcEd6lJo4DCALHMw">
+  <labelTypes id="_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@5" entityName="Type">
+    <label id="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@4.literals@0" entityName="UI"/>
+  </labelTypes>
+  <labelTypes id="_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@1" entityName="AssignedRoles">
+    <label id="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@0.literals@1" entityName="Airline"/>
+    <label id="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@0.literals@0" entityName="User"/>
+  </labelTypes>
+  <labelTypes id="_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@2" entityName="Sensitivity">
+    <label id="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal"/>
+  </labelTypes>
+  <behavior id="_2pBlYMN-EeWst9mTsticNA" entityName="TravelPlanner">
+    <inPin id="_2pBlYMN-EeWst9mTsticNA-in-UserInterface" entityName="in-UserInterface"/>
+    <inPin id="_2pBlYMN-EeWst9mTsticNA-in-TravelAgency" entityName="in-TravelAgency"/>
+    <inPin id="_2pBlYMN-EeWst9mTsticNA-in-CreditCardCenter" entityName="in-CreditCardCenter"/>
+    <inPin id="_2pBlYMN-EeWst9mTsticNA-in-Airline" entityName="in-Airline"/>
+    <outPin id="_2pBlYMN-EeWst9mTsticNA-out-UserInterface" entityName="out-UserInterface"/>
+    <outPin id="_2pBlYMN-EeWst9mTsticNA-out-TravelAgency" entityName="out-TravelAgency"/>
+    <outPin id="_2pBlYMN-EeWst9mTsticNA-out-CreditCardCenter" entityName="out-CreditCardCenter"/>
+    <outPin id="_2pBlYMN-EeWst9mTsticNA-out-Airline" entityName="out-Airline"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_2pBlYMN-EeWst9mTsticNA-fwd-in-UserInterface-out-TravelAgency-Personal" entityName="forward Personal in-UserInterface -> out-TravelAgency" outputPin="_2pBlYMN-EeWst9mTsticNA-out-TravelAgency" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_2pBlYMN-EeWst9mTsticNA-in-UserInterface _2pBlYMN-EeWst9mTsticNA-in-TravelAgency _2pBlYMN-EeWst9mTsticNA-in-Airline _2pBlYMN-EeWst9mTsticNA-in-CreditCardCenter">
+      <term xsi:type="datadictionary:LabelReference" id="_2pBlYMN-EeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_2pBlYMN-EeWst9mTsticNA-fwd-in-UserInterface-out-Airline-Personal" entityName="forward Personal in-UserInterface -> out-Airline" outputPin="_2pBlYMN-EeWst9mTsticNA-out-Airline" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_2pBlYMN-EeWst9mTsticNA-in-UserInterface _2pBlYMN-EeWst9mTsticNA-in-TravelAgency _2pBlYMN-EeWst9mTsticNA-in-Airline _2pBlYMN-EeWst9mTsticNA-in-CreditCardCenter">
+      <term xsi:type="datadictionary:LabelReference" id="_2pBlYMN-EeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_2pBlYMN-EeWst9mTsticNA-fwd-in-UserInterface-out-Airline-Personal" entityName="forward Personal in-UserInterface -> out-Airline" outputPin="_2pBlYMN-EeWst9mTsticNA-out-Airline" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_2pBlYMN-EeWst9mTsticNA-in-UserInterface _2pBlYMN-EeWst9mTsticNA-in-TravelAgency _2pBlYMN-EeWst9mTsticNA-in-Airline _2pBlYMN-EeWst9mTsticNA-in-CreditCardCenter">
+      <term xsi:type="datadictionary:LabelReference" id="_2pBlYMN-EeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_2pBlYMN-EeWst9mTsticNA-fwd-in-UserInterface-out-Airline-Personal" entityName="forward Personal in-UserInterface -> out-Airline" outputPin="_2pBlYMN-EeWst9mTsticNA-out-Airline" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_2pBlYMN-EeWst9mTsticNA-in-UserInterface _2pBlYMN-EeWst9mTsticNA-in-TravelAgency _2pBlYMN-EeWst9mTsticNA-in-Airline _2pBlYMN-EeWst9mTsticNA-in-CreditCardCenter">
+      <term xsi:type="datadictionary:LabelReference" id="_2pBlYMN-EeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+  </behavior>
+  <behavior id="_HRAO0MOAEeWst9mTsticNA" entityName="Airline">
+    <inPin id="_HRAO0MOAEeWst9mTsticNA-in-TravelAgency" entityName="in-TravelAgency"/>
+    <inPin id="_HRAO0MOAEeWst9mTsticNA-in-FlightStorage" entityName="in-FlightStorage"/>
+    <inPin id="_HRAO0MOAEeWst9mTsticNA-in-TravelPlanner" entityName="in-TravelPlanner"/>
+    <outPin id="_HRAO0MOAEeWst9mTsticNA-out-TravelAgency" entityName="out-TravelAgency"/>
+    <outPin id="_HRAO0MOAEeWst9mTsticNA-out-AirlineLogger" entityName="out-AirlineLogger"/>
+    <outPin id="_HRAO0MOAEeWst9mTsticNA-out-FlightStorage" entityName="out-FlightStorage"/>
+    <outPin id="_HRAO0MOAEeWst9mTsticNA-out-TravelPlanner" entityName="out-TravelPlanner"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_HRAO0MOAEeWst9mTsticNA-fwd-in-TravelAgency-out-FlightStorage-Personal" entityName="forward Personal in-TravelAgency -> out-FlightStorage" outputPin="_HRAO0MOAEeWst9mTsticNA-out-FlightStorage" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_HRAO0MOAEeWst9mTsticNA-in-TravelAgency _HRAO0MOAEeWst9mTsticNA-in-FlightStorage _HRAO0MOAEeWst9mTsticNA-in-TravelPlanner">
+      <term xsi:type="datadictionary:LabelReference" id="_HRAO0MOAEeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_HRAO0MOAEeWst9mTsticNA-fwd-in-TravelAgency-out-FlightStorage-Personal" entityName="forward Personal in-TravelAgency -> out-FlightStorage" outputPin="_HRAO0MOAEeWst9mTsticNA-out-FlightStorage" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_HRAO0MOAEeWst9mTsticNA-in-TravelAgency _HRAO0MOAEeWst9mTsticNA-in-FlightStorage _HRAO0MOAEeWst9mTsticNA-in-TravelPlanner">
+      <term xsi:type="datadictionary:LabelReference" id="_HRAO0MOAEeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+  </behavior>
+  <behavior id="_XOyEsMOBEeWst9mTsticNA" entityName="CreditCardCenter">
+    <inPin id="_XOyEsMOBEeWst9mTsticNA-in-TravelPlanner" entityName="in-TravelPlanner"/>
+    <inPin id="_XOyEsMOBEeWst9mTsticNA-in-UserInterface" entityName="in-UserInterface"/>
+    <outPin id="_XOyEsMOBEeWst9mTsticNA-out-TravelPlanner" entityName="out-TravelPlanner"/>
+    <outPin id="_XOyEsMOBEeWst9mTsticNA-out-UserInterface" entityName="out-UserInterface"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_XOyEsMOBEeWst9mTsticNA-fwd-in-TravelPlanner-out-UserInterface-Personal" entityName="forward Personal in-TravelPlanner -> out-UserInterface" outputPin="_XOyEsMOBEeWst9mTsticNA-out-UserInterface" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_XOyEsMOBEeWst9mTsticNA-in-TravelPlanner _XOyEsMOBEeWst9mTsticNA-in-UserInterface">
+      <term xsi:type="datadictionary:LabelReference" id="_XOyEsMOBEeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_XOyEsMOBEeWst9mTsticNA-fwd-in-TravelPlanner-out-UserInterface-Personal" entityName="forward Personal in-TravelPlanner -> out-UserInterface" outputPin="_XOyEsMOBEeWst9mTsticNA-out-UserInterface" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_XOyEsMOBEeWst9mTsticNA-in-TravelPlanner _XOyEsMOBEeWst9mTsticNA-in-UserInterface">
+      <term xsi:type="datadictionary:LabelReference" id="_XOyEsMOBEeWst9mTsticNA-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+  </behavior>
+  <behavior id="_5gt3EBRrEey_turSZ8PcJQ" entityName="AirlineLogger">
+    <inPin id="_5gt3EBRrEey_turSZ8PcJQ-in-Airline" entityName="in-Airline"/>
+    <outPin id="_5gt3EBRrEey_turSZ8PcJQ-out-LoggingDB" entityName="out-LoggingDB"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_5gt3EBRrEey_turSZ8PcJQ-fwd-in-Airline-out-LoggingDB-Personal" entityName="forward Personal in-Airline -> out-LoggingDB" outputPin="_5gt3EBRrEey_turSZ8PcJQ-out-LoggingDB" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_5gt3EBRrEey_turSZ8PcJQ-in-Airline">
+      <term xsi:type="datadictionary:LabelReference" id="_5gt3EBRrEey_turSZ8PcJQ-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+  </behavior>
+  <behavior id="_Vt1ToKo4Ee6aj_SHkSg6ow" entityName="FlightStorage">
+    <inPin id="_Vt1ToKo4Ee6aj_SHkSg6ow-in-Airline" entityName="in-Airline"/>
+    <outPin id="_Vt1ToKo4Ee6aj_SHkSg6ow-out-Airline" entityName="out-Airline"/>
+  </behavior>
+  <behavior id="_ik_1gKpHEe6aj_SHkSg6ow" entityName="LoggingDB">
+    <inPin id="_ik_1gKpHEe6aj_SHkSg6ow-in-AirlineLogger" entityName="in-AirlineLogger"/>
+  </behavior>
+  <behavior id="_mz-sgKpJEe6aj_SHkSg6ow" entityName="UserInterface">
+    <inPin id="_mz-sgKpJEe6aj_SHkSg6ow-in-TravelPlanner" entityName="in-TravelPlanner"/>
+    <inPin id="_mz-sgKpJEe6aj_SHkSg6ow-in-CreditCardCenter" entityName="in-CreditCardCenter"/>
+    <outPin id="_mz-sgKpJEe6aj_SHkSg6ow-out-TravelPlanner" entityName="out-TravelPlanner"/>
+    <outPin id="_mz-sgKpJEe6aj_SHkSg6ow-out-CreditCardCenter" entityName="out-CreditCardCenter"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_mz-sgKpJEe6aj_SHkSg6ow-set-out-TravelPlanner-Personal" entityName="set Personal on out-TravelPlanner" outputPin="_mz-sgKpJEe6aj_SHkSg6ow-out-TravelPlanner" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_mz-sgKpJEe6aj_SHkSg6ow-in-TravelPlanner">
+      <term xsi:type="datadictionary:TRUE" id="_ji-PqNFwEfGLNZtn5yGj6w"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_mz-sgKpJEe6aj_SHkSg6ow-set-out-CreditCardCenter-Personal" entityName="set Personal on out-CreditCardCenter" outputPin="_mz-sgKpJEe6aj_SHkSg6ow-out-CreditCardCenter" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_mz-sgKpJEe6aj_SHkSg6ow-in-TravelPlanner">
+      <term xsi:type="datadictionary:TRUE" id="_ji-PqtFwEfGLNZtn5yGj6w"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_mz-sgKpJEe6aj_SHkSg6ow-set-out-TravelPlanner-Personal" entityName="set Personal on out-TravelPlanner" outputPin="_mz-sgKpJEe6aj_SHkSg6ow-out-TravelPlanner" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_mz-sgKpJEe6aj_SHkSg6ow-in-TravelPlanner">
+      <term xsi:type="datadictionary:TRUE" id="_ji-PrNFwEfGLNZtn5yGj6w"/>
+    </assignment>
+  </behavior>
+  <behavior id="_HEzvkKpKEe6aj_SHkSg6ow" entityName="TravelAgency">
+    <inPin id="_HEzvkKpKEe6aj_SHkSg6ow-in-TravelPlanner" entityName="in-TravelPlanner"/>
+    <inPin id="_HEzvkKpKEe6aj_SHkSg6ow-in-Airline" entityName="in-Airline"/>
+    <outPin id="_HEzvkKpKEe6aj_SHkSg6ow-out-TravelPlanner" entityName="out-TravelPlanner"/>
+    <outPin id="_HEzvkKpKEe6aj_SHkSg6ow-out-Airline" entityName="out-Airline"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_HEzvkKpKEe6aj_SHkSg6ow-fwd-in-TravelPlanner-out-Airline-Personal" entityName="forward Personal in-TravelPlanner -> out-Airline" outputPin="_HEzvkKpKEe6aj_SHkSg6ow-out-Airline" outputLabels="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" inputPins="_HEzvkKpKEe6aj_SHkSg6ow-in-TravelPlanner _HEzvkKpKEe6aj_SHkSg6ow-in-Airline">
+      <term xsi:type="datadictionary:LabelReference" id="_HEzvkKpKEe6aj_SHkSg6ow-label-ref-_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0" entityName="Personal" label="_Nc31EPXDEeut8bxiE9EShA-characteristicEnumerations@1.literals@0"/>
+    </assignment>
+  </behavior>
+</datadictionary:DataDictionary>

@@ -1,0 +1,31 @@
+dictionary id "_Nc31EPXDEeut8bxiE9EShA"
+
+enum Roles {
+	User
+	Airline
+}
+
+enum Sensitivity {
+	Personal
+}
+
+enum Encryption {
+	Encrypted
+}
+
+enum Location {
+	NonEU
+}
+
+enum Type {
+	UI
+	Agency
+}
+
+enumCharacteristicType GrantedRoles using Roles
+enumCharacteristicType AssignedRoles using Roles
+
+enumCharacteristicType Sensitivity using Sensitivity
+enumCharacteristicType Encryption using Encryption
+enumCharacteristicType Location using Location
+enumCharacteristicType Type using Type

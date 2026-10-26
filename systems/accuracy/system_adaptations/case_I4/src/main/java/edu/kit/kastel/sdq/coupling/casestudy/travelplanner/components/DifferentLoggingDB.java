@@ -1,0 +1,19 @@
+package edu.kit.kastel.sdq.coupling.casestudy.travelplanner.components;
+
+import java.util.Collection;
+import java.util.HashSet;
+
+import edu.kit.kastel.sdq.coupling.casestudy.travelplanner.interfaces.LogStoring;
+
+public class DifferentLoggingDB implements LogStoring {
+
+	public String componentId = "_jpQcAMpYEfG6hcpNbuZhyw";
+	
+	private Collection<String> logEntries = new HashSet<String>();
+
+	@Override
+	public void storeLog(Object entry) {
+		logEntries.add("Booked with:" + entry);
+	}
+
+}

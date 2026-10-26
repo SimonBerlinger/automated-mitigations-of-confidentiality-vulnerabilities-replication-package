@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="_JiPBICHdEd6lJo4DCALHMw">
+  <nodes xsi:type="dataflowdiagram:Process" id="_QUuNAD1-EfGvWuxM4F7ajA" entityName="Assembly_UserRequestHandling">
+    <behavior href="dfd_out.datadictionary#_QUuNAD1-EfGvWuxM4F7ajA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="_Sl17ED1-EfGvWuxM4F7ajA" entityName="Assembly_DataEncryption">
+    <behavior href="dfd_out.datadictionary#_Sl17ED1-EfGvWuxM4F7ajA"/>
+  </nodes>
+  <nodes xsi:type="dataflowdiagram:Process" id="_2hDlMD1-EfGvWuxM4F7ajA" entityName="Assembly_DatabaseHandling">
+    <behavior href="dfd_out.datadictionary#_2hDlMD1-EfGvWuxM4F7ajA"/>
+    <properties href="dfd_out.datadictionary#_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@1.literals@1"/>
+  </nodes>
+</dataflowdiagram:DataFlowDiagram>

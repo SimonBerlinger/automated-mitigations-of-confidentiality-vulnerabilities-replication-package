@@ -1,0 +1,9 @@
+Number of mitigations performed,Runtime in milliseconds
+1,138.9
+15,214
+30,282.5
+150,1031.67
+300,1825.35
+600,3138.09
+900,5162.17
+1200,6435.65

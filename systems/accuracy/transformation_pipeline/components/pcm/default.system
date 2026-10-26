@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_84D0kCHcEd6lJo4DCALHMw" entityName="ExampleScenario">
+  <assemblyContexts__ComposedStructure id="_2pBlYMN-EeWst9mTsticNA" entityName="TravelPlanner">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_5EaVoMNxEeWPE-QAhbUzuQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_HRAO0MOAEeWst9mTsticNA" entityName="Airline">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_j3xt4MNzEeWPE-QAhbUzuQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_XOyEsMOBEeWst9mTsticNA" entityName="CreditCardCenter">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#__s82QMN5EeWPE-QAhbUzuQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_5gt3EBRrEey_turSZ8PcJQ" entityName="AirlineLogger">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_MKBSwAyQEey1YdsQNY8KdA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_Vt1ToKo4Ee6aj_SHkSg6ow" entityName="FlightStorage">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_9fAeQJnHEe64o_d9hBvmUg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_mz-sgKpJEe6aj_SHkSg6ow" entityName="UserInterface">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_l3SqMO7sEeurfJm_5KAHmg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_HEzvkKpKEe6aj_SHkSg6ow" entityName="TravelAgency">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_IQOjkI0vEe6fP4H9xO-odw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_6btOAKWWEfGgap31RRDi3A" entityName="Assembly_DebugInterface">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_wWQoA6WWEfGgap31RRDi3A"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ik_1gKpHEe6aj_SHkSg6ow_Backup" entityName="LoggingDB_Backup">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_4VLZwKpGEe6aj_SHkSg6ow"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_UMbikKpJEe6aj_SHkSg6ow" entityName="Connector TravelPlanner -> CreditCardCenter" requiringAssemblyContext_AssemblyConnector="_2pBlYMN-EeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_XOyEsMOBEeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#_5cTm0I0vEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_6nN6wI0vEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_VlY5kKpJEe6aj_SHkSg6ow" entityName="Connector TravelPlanner -> Airline" requiringAssemblyContext_AssemblyConnector="_2pBlYMN-EeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_HRAO0MOAEeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#_U4nK8I0wEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_OAFz8I0wEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_bdIwEKpJEe6aj_SHkSg6ow" entityName="Connector Airline -> AirlineLogger" requiringAssemblyContext_AssemblyConnector="_HRAO0MOAEeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_5gt3EBRrEey_turSZ8PcJQ">
+    <providedRole_AssemblyConnector href="default.repository#_169ccI0uEe6fP4H9xO-odw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_e8m_cI0wEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_cPfaEKpJEe6aj_SHkSg6ow" entityName="Connector Airline -> FlightStorage" requiringAssemblyContext_AssemblyConnector="_HRAO0MOAEeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_Vt1ToKo4Ee6aj_SHkSg6ow">
+    <providedRole_AssemblyConnector href="default.repository#__VCy0JnHEe64o_d9hBvmUg"/>
+    <requiredRole_AssemblyConnector href="default.repository#_5WbfUJnHEe64o_d9hBvmUg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_vT6GMKpJEe6aj_SHkSg6ow" entityName="Connector CreditCardCenter -> Assembly_UserInterface &lt;UserInterface>" requiringAssemblyContext_AssemblyConnector="_XOyEsMOBEeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_mz-sgKpJEe6aj_SHkSg6ow">
+    <providedRole_AssemblyConnector href="default.repository#_0baf0I0vEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_y-Ls0I0vEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_ykzPMKpJEe6aj_SHkSg6ow" entityName="Connector Assembly_UserInterface &lt;UserInterface> -> CreditCardCenter" requiringAssemblyContext_AssemblyConnector="_mz-sgKpJEe6aj_SHkSg6ow" providingAssemblyContext_AssemblyConnector="_XOyEsMOBEeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#_5cTm0I0vEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_43JEQI0vEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_0Rc-QKpJEe6aj_SHkSg6ow" entityName="Connector Assembly_UserInterface &lt;UserInterface> -> TravelPlanner" requiringAssemblyContext_AssemblyConnector="_mz-sgKpJEe6aj_SHkSg6ow" providingAssemblyContext_AssemblyConnector="_2pBlYMN-EeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#__c2pcI0uEe6fP4H9xO-odw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_NJtbAI0vEe6fP4H9xO-odw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_09F8QKpJEe6aj_SHkSg6ow" entityName="Connector Assembly_UserInterface &lt;UserInterface> -> TravelPlanner" requiringAssemblyContext_AssemblyConnector="_mz-sgKpJEe6aj_SHkSg6ow" providingAssemblyContext_AssemblyConnector="_2pBlYMN-EeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#_HomGYI0wEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_G0tLUI0wEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_5rrLQKpJEe6aj_SHkSg6ow" entityName="ProvDelegation Provided_FlightQuery -> Provided_FlightQuery_UserInterface" outerProvidedRole_ProvidedDelegationConnector="_3Zo3MKpJEe6aj_SHkSg6ow" assemblyContext_ProvidedDelegationConnector="_mz-sgKpJEe6aj_SHkSg6ow">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_ZYfsEI0vEe6fP4H9xO-odw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_86WtwKpJEe6aj_SHkSg6ow" entityName="ProvDelegation Provided_FlightBooking -> Provided_FlightBooking_UserInterface" outerProvidedRole_ProvidedDelegationConnector="_6B4EwKpJEe6aj_SHkSg6ow" assemblyContext_ProvidedDelegationConnector="_mz-sgKpJEe6aj_SHkSg6ow">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_9XFaUI0vEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_MmtR4KpKEe6aj_SHkSg6ow" entityName="Connector Assembly_TravelAgency &lt;TravelAgency> -> Airline" requiringAssemblyContext_AssemblyConnector="_HEzvkKpKEe6aj_SHkSg6ow" providingAssemblyContext_AssemblyConnector="_HRAO0MOAEeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#_rXuhQJKfEe6Q8r9ohmbDGg"/>
+    <requiredRole_AssemblyConnector href="default.repository#_r3_VsJKfEe6Q8r9ohmbDGg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_OxypYKpKEe6aj_SHkSg6ow" entityName="Connector TravelPlanner -> Assembly_TravelAgency &lt;TravelAgency>" requiringAssemblyContext_AssemblyConnector="_2pBlYMN-EeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_HEzvkKpKEe6aj_SHkSg6ow">
+    <providedRole_AssemblyConnector href="default.repository#_VUaLkI0vEe6fP4H9xO-odw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_-9kFYI0uEe6fP4H9xO-odw"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_TDnq8KpKEe6aj_SHkSg6ow" entityName="Connector Airline -> Assembly_TravelAgency &lt;TravelAgency>" requiringAssemblyContext_AssemblyConnector="_HRAO0MOAEeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_HEzvkKpKEe6aj_SHkSg6ow">
+    <providedRole_AssemblyConnector href="default.repository#_aHgRsI0wEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_dsHn8I0wEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_8mhfwKWWEfGgap31RRDi3A" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_6B4EwKpJEe6aj_SHkSg6ow" assemblyContext_ProvidedDelegationConnector="_6btOAKWWEfGgap31RRDi3A">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_wWQoBaWWEfGgap31RRDi3A"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_96clwKWWEfGgap31RRDi3A" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_3Zo3MKpJEe6aj_SHkSg6ow" assemblyContext_ProvidedDelegationConnector="_6btOAKWWEfGgap31RRDi3A">
+    <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_wWQoBKWWEfGgap31RRDi3A"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="__Tp0YKWWEfGgap31RRDi3A" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_XOyEsMOBEeWst9mTsticNA" providingAssemblyContext_AssemblyConnector="_6btOAKWWEfGgap31RRDi3A">
+    <providedRole_AssemblyConnector href="default.repository#_wWQoBqWWEfGgap31RRDi3A"/>
+    <requiredRole_AssemblyConnector href="default.repository#_y-Ls0I0vEe6e08WJYE3hcQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_AvSE4KWXEfGgap31RRDi3A" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_6btOAKWWEfGgap31RRDi3A" providingAssemblyContext_AssemblyConnector="_XOyEsMOBEeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#_5cTm0I0vEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_wWQoCKWWEfGgap31RRDi3A"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_BvioAKWXEfGgap31RRDi3A" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_6btOAKWWEfGgap31RRDi3A" providingAssemblyContext_AssemblyConnector="_2pBlYMN-EeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#_HomGYI0wEe6e08WJYE3hcQ"/>
+    <requiredRole_AssemblyConnector href="default.repository#_wWQoB6WWEfGgap31RRDi3A"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_CpuYUKWXEfGgap31RRDi3A" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_6btOAKWWEfGgap31RRDi3A" providingAssemblyContext_AssemblyConnector="_2pBlYMN-EeWst9mTsticNA">
+    <providedRole_AssemblyConnector href="default.repository#__c2pcI0uEe6fP4H9xO-odw"/>
+    <requiredRole_AssemblyConnector href="default.repository#_wWQoCaWWEfGgap31RRDi3A"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_JsEZsKWXEfGgap31RRDi3A" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_5gt3EBRrEey_turSZ8PcJQ" providingAssemblyContext_AssemblyConnector="_ik_1gKpHEe6aj_SHkSg6ow_Backup">
+    <providedRole_AssemblyConnector href="default.repository#_2E91MKpHEe6aj_SHkSg6ow"/>
+    <requiredRole_AssemblyConnector href="default.repository#_4FlCEKpHEe6aj_SHkSg6ow"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_3Zo3MKpJEe6aj_SHkSg6ow" entityName="Provided_FlightQuery">
+    <providedInterface__OperationProvidedRole href="default.repository#_uUkncMN0EeWPE-QAhbUzuQ"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_6B4EwKpJEe6aj_SHkSg6ow" entityName="Provided_FlightBooking">
+    <providedInterface__OperationProvidedRole href="default.repository#_sTp-SIqtEe65U8vWBC8HcA"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

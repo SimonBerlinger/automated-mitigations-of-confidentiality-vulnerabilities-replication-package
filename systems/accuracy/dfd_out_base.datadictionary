@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_84D0kCHcEd6lJo4DCALHMw">
+  <labelTypes id="_tO2xQDviEfGOm4DBzX1u9w-characteristicTypes@1" entityName="Location">
+    <label id="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@1.literals@1" entityName="EXTERNAL"/>
+  </labelTypes>
+  <labelTypes id="_tO2xQDviEfGOm4DBzX1u9w-characteristicTypes@2" entityName="Sensitivity">
+    <label id="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@2.literals@0" entityName="PERSONAL"/>
+  </labelTypes>
+  <labelTypes id="_tO2xQDviEfGOm4DBzX1u9w-characteristicTypes@3" entityName="Encryption">
+    <label id="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@3.literals@0" entityName="ENCRYPTED"/>
+  </labelTypes>
+  <behavior id="_QUuNAD1-EfGvWuxM4F7ajA" entityName="Assembly_UserRequestHandling">
+    <outPin id="_QUuNAD1-EfGvWuxM4F7ajA-out-User" entityName="out-User"/>
+    <outPin id="_QUuNAD1-EfGvWuxM4F7ajA-out-DataEncryption" entityName="out-DataEncryption"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_QUuNAD1-EfGvWuxM4F7ajA-set-out-User-PERSONAL" entityName="set PERSONAL on out-User" outputPin="_QUuNAD1-EfGvWuxM4F7ajA-out-User" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@2.literals@0">
+      <term xsi:type="datadictionary:TRUE" id="_g8bPkKSLEfG6Due2kojs_Q"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_QUuNAD1-EfGvWuxM4F7ajA-set-out-User-PERSONAL" entityName="set PERSONAL on out-User" outputPin="_QUuNAD1-EfGvWuxM4F7ajA-out-User" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@2.literals@0">
+      <term xsi:type="datadictionary:TRUE" id="_g8bPkqSLEfG6Due2kojs_Q"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_QUuNAD1-EfGvWuxM4F7ajA-set-out-DataEncryption-PERSONAL" entityName="set PERSONAL on out-DataEncryption" outputPin="_QUuNAD1-EfGvWuxM4F7ajA-out-DataEncryption" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@2.literals@0">
+      <term xsi:type="datadictionary:TRUE" id="_g8b2oqSLEfG6Due2kojs_Q"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_QUuNAD1-EfGvWuxM4F7ajA-set-out-DataEncryption-PERSONAL" entityName="set PERSONAL on out-DataEncryption" outputPin="_QUuNAD1-EfGvWuxM4F7ajA-out-DataEncryption" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@2.literals@0">
+      <term xsi:type="datadictionary:TRUE" id="_g8b2pKSLEfG6Due2kojs_Q"/>
+    </assignment>
+  </behavior>
+  <behavior id="_Sl17ED1-EfGvWuxM4F7ajA" entityName="Assembly_DataEncryption">
+    <inPin id="_Sl17ED1-EfGvWuxM4F7ajA-in-DatabaseHandling" entityName="in-DatabaseHandling"/>
+    <outPin id="_Sl17ED1-EfGvWuxM4F7ajA-out-DatabaseHandling" entityName="out-DatabaseHandling"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_Sl17ED1-EfGvWuxM4F7ajA-set-out-DatabaseHandling-ENCRYPTED" entityName="set ENCRYPTED on out-DatabaseHandling" outputPin="_Sl17ED1-EfGvWuxM4F7ajA-out-DatabaseHandling" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@3.literals@0">
+      <term xsi:type="datadictionary:TRUE" id="_g8cdtKSLEfG6Due2kojs_Q"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_Sl17ED1-EfGvWuxM4F7ajA-set-out-DatabaseHandling-ENCRYPTED" entityName="set ENCRYPTED on out-DatabaseHandling" outputPin="_Sl17ED1-EfGvWuxM4F7ajA-out-DatabaseHandling" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@3.literals@0">
+      <term xsi:type="datadictionary:TRUE" id="_g8cdtqSLEfG6Due2kojs_Q"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_Sl17ED1-EfGvWuxM4F7ajA-set-out-DatabaseHandling-ENCRYPTED" entityName="set ENCRYPTED on out-DatabaseHandling" outputPin="_Sl17ED1-EfGvWuxM4F7ajA-out-DatabaseHandling" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@3.literals@0">
+      <term xsi:type="datadictionary:TRUE" id="_g8dEwKSLEfG6Due2kojs_Q"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_Sl17ED1-EfGvWuxM4F7ajA-negate-in-DatabaseHandling-ENCRYPTED" entityName="negate ENCRYPTED on in-DatabaseHandling" outputPin="_Sl17ED1-EfGvWuxM4F7ajA-in-DatabaseHandling" outputLabels="_tO2xQDviEfGOm4DBzX1u9w-characteristicEnumerations@3.literals@0" inputPins="_Sl17ED1-EfGvWuxM4F7ajA-in-DatabaseHandling">
+      <term xsi:type="datadictionary:NOT" id="_g8dEw6SLEfG6Due2kojs_Q">
+        <negatedTerm xsi:type="datadictionary:TRUE" id="_g8dr0KSLEfG6Due2kojs_Q"/>
+      </term>
+    </assignment>
+  </behavior>
+  <behavior id="_2hDlMD1-EfGvWuxM4F7ajA" entityName="Assembly_DatabaseHandling"/>
+</datadictionary:DataDictionary>

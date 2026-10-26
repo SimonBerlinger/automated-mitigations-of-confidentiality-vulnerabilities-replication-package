@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_1gaIwMU_EfG7Fc5-vSoRYw" version="15.0.0.202209061200">
+  <semanticResources>My.nodecharacteristics</semanticResources>
+  <semanticResources>default.resourceenvironment</semanticResources>
+  <semanticResources>pathmap://PCM_MODELS/Palladio.resourcetype</semanticResources>
+  <semanticResources>travelPlanner.pddc</semanticResources>
+  <semanticResources>travelPlanner.usagemodel</semanticResources>
+  <semanticResources>default.system</semanticResources>
+  <semanticResources>default.repository</semanticResources>
+  <semanticResources>pathmap://PCM_MODELS/PrimitiveTypes.repository</semanticResources>
+</viewpoint:DAnalysis>

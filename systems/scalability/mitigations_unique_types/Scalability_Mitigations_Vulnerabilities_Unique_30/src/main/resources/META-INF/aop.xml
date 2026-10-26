@@ -1,0 +1,11 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.aspectj.org/dtd/aspectj_1_5_0.dtd">
+<aspectj>
+    <weaver options="-verbose">
+        <include within="de.uulm.masterthesis.runningexample..*"/>
+        <exclude within="edu.kit.kastel.sdq.coupling.casestudy.travelplanner.Main"/>
+    </weaver>
+    <aspects>
+        
+        <aspect name="de.uulm.masterthesis.runningexample.instrumentation.FullInstrumentation"/>
+    </aspects>
+</aspectj>
